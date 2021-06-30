@@ -33,7 +33,7 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) {
         BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
 
-        System.out.println("BCryptPassword: " + bCryptPasswordEncoder.encode(request.getParameter("password")));
+//        System.out.println("BCryptPassword: " + bCryptPasswordEncoder.encode(request.getParameter("password")));
         System.out.println("UserName: " + request.getParameter("username"));
         System.out.println("password: " + request.getParameter("password"));
 
